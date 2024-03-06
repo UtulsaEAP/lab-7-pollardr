@@ -1,3 +1,6 @@
+#Riley Pollard
+#Wednesday Class, Thursday 2pm Lab
+
 def courseGrade():
     
     # TODO: Declare any necessary variables here. 

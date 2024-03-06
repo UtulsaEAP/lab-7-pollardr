@@ -1,3 +1,6 @@
+#Riley Pollard
+#Wednesday Class, Thursday 2pm Lab
+
 def fileNameChange():
     #type your code here
 

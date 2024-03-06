@@ -1,3 +1,6 @@
+#Riley Pollard
+#Wednesday Class, Thursday 2pm Lab
+
 def exceptionHandling():
     # Split input into 2 parts: name and age
     parts = input().split()
