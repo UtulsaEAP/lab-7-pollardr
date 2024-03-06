@@ -19,6 +19,7 @@ def courseGrade():
             for line in file:
                 # split the name and exams up
                 lastname, firstname, exam1, exam2, exam3 = line.strip().split('\t')
+                print("something")
 
                 #make grades into ints
                 exam1 = int(exam1)
@@ -58,11 +59,11 @@ def courseGrade():
     
     #name based on which TSV file
     if  inputfile == "./Problem 3/StudentInfo.tsv":
-        outputfile = "./Problem 3/report.txt"
+        outputfile = "./report.txt"
     elif inputfile == "./Problem 3/StudentInfo1.tsv":
-        outputfile = "report1.txt"
+        outputfile = "./report1.txt"
     else:
-        outputfile = "report2.txt"
+        outputfile = "./report2.txt"
         
     #actual ouput    
     with open(outputfile, 'w') as outputfile:
