@@ -13,12 +13,11 @@ def courseGrade():
       
     # TODO: Read a file name from the user and read the tsv file here. 
     inputfile = input()
-
     try:
         with open(inputfile, 'r') as file:
             for line in file:
                 # split the name and exams up
-                lastname, firstname, exam1, exam2, exam3 = line.split('\t')
+                lastname, firstname, exam1, exam2, exam3 = line.strip().split()
                 print("something")
 
                 #make grades into ints
@@ -70,7 +69,7 @@ def courseGrade():
         for student in studentgrade:
             outputfile.write('\t'.join(map(str, student)) + '\n')
 
-        outputfile.write(f'\nAverages: midterm1 {avgexam1: .2f}, midterm2 {avgexam2: .2f}, final {avgexam3: .2f}')  
+        outputfile.write(f'\nAverages: midterm1{avgexam1: .2f}, midterm2{avgexam2: .2f}, final{avgexam3: .2f}')  
 
 
 if __name__ == "__main__":
