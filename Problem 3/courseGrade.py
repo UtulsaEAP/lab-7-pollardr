@@ -18,7 +18,6 @@ def courseGrade():
             for line in file:
                 # split the name and exams up
                 lastname, firstname, exam1, exam2, exam3 = line.strip().split()
-                print("something")
 
                 #make grades into ints
                 exam1 = int(exam1)
